@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Orelega+One&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: rgb(65, 64, 64);
+    background-image: url(./pozadina2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    width: 90vw;
+    
+}
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor:pointer;
+    flex: 0.9;
+    margin: 18px;
+    position: relative;
+    transition: flex 0.3s ease-in 0.2s;
+    border: solid black 2px;
+    box-shadow: 2px 2.5px 8px rgb(117, 111, 111);
+    
+}
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.panel.active{
+    flex: 5;
+    
+    
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 2s ease-in 0.4s;
+}
+@media (max-width:480px){
+    .container{
+        width: 100vw;
+    }
+    
+
+}
+h1{
+    color: white;
+    font-family: 'Orelega One', cursive;
+    text-shadow: 5px 5px rgb(94, 92, 92);
+}
+
+
+
